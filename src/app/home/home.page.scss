@@ -5,7 +5,11 @@ ion-content {
     align-items: center;
     justify-content: center;
     height: 100%;
+    background: linear-gradient(to bottom, #ffff00, #0000ff);
+    animation: color-change 5s infinite;
+  }
     
+    }
     ion-label {
       font-size: 20px;
       margin-bottom: 20px;
@@ -33,8 +37,7 @@ ion-content {
         background-color: #005aff;
       }
     }
-  }
-}
+
 
 ion-title {
   font-size: 24px;
@@ -49,4 +52,34 @@ ion-title {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
+}
+
+@keyframes color-change {
+  0% {
+    background: linear-gradient(to bottom, #ffff00, #0000ff);
+  }
+  12.5% {
+    background: linear-gradient(to bottom, #ff00ff, #00ffff);
+  }
+  25% {
+    background: linear-gradient(to bottom, #ff0000, #00ff00);
+  }
+  37.5% {
+    background: linear-gradient(to bottom, #00ff00, #ff0000);
+  }
+  50% {
+    background: linear-gradient(to bottom, #00ffff, #ff00ff);
+  }
+  62.5% {
+    background: linear-gradient(to bottom, #0000ff, #ffff00);
+  }
+  75% {
+    background: linear-gradient(to bottom, #ff00ff, #00ffff);
+  }
+  87.5% {
+    background: linear-gradient(to bottom, #00ff00, #ff0000);
+  }
+  100% {
+    background: linear-gradient(to bottom, #ffff00, #0000ff);
+  }
 }
